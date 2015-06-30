@@ -1,6 +1,6 @@
 Simple Midori based TV for Raspberry Pi
 
-First of all update your Raspberry Pi:
+First of all update your Raspberry Pi after installing Raspbian:
 ```
   sudo apt-get update
   sudo apt-get upgrade
@@ -26,4 +26,7 @@ cd /var/www
 sudo git clone https://github.com/G07cha/RaspberryTV.git .
 ```
 Or clone to any another place and copy files to /var/www.
-
+And allow write to link file
+```
+sudo chmod a+w /var/www/link
+```
