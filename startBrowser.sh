@@ -1,10 +1,10 @@
 #/bin/sh
 
-#<BlackMagic>
+#Waiting for system boot
 sleep 5
+#Exporting env variables
 export DISPLAY=:0.0
 xhost +
-#</BlackMagic>
 
 link=$(head -n 1 /var/www/link)
 
