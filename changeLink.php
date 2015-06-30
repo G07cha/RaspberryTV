@@ -8,7 +8,6 @@
 </style>
 
 <?php
-ini_set('display_errors', 1); error_reporting(E_ALL);
     $link = $_GET["link"];
 
     $fileWithLink = fopen("/var/www/link", "w+") or die("Can't write link");
