@@ -1,9 +1,31 @@
-Simple Midori based TV for Raspberry Pi
+Simple Midori based TV for Raspberry Pi with web interface
+
+Easy way
+-------
+
+Download installer and execute it
+```
+curl https://github.com/G07cha/RaspberryTV/blob/master/install.sh
+chmod a+x ./install.sh
+./install.sh
+```
+Open crontab
+```
+crontab -e
+```
+Add next jobs on the end of the file:
+```
+@reboot /var/www/startBrowser.sh
+0 9 * * * /var/www/wake.sh
+0 20 * * * /var/www/sleep.sh
+```
+Hard way
+-------
 
 First of all update your Raspberry Pi after installing Raspbian:
 ```
-  sudo apt-get update
-  sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
 Next install Midori, any server that you prefer and PHP module
 ```
