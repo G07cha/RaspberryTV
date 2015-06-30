@@ -30,3 +30,15 @@ And allow write to link file
 ```
 sudo chmod a+w /var/www/link
 ```
+Finally setup cron jobs to start browser on reboot and turn off monitor at night
+'''
+crontab -e
+'''
+Add next jobs:
+'''
+@reboot /var/www/startBrowser.sh
+0 9 * * * /var/www/wake.sh
+0 20 * * * /var/www/sleep.sh
+'''
+
+Done, you are awesome!
