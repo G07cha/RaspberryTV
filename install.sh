@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 #Installing required software
-sudo apt-get install midori lighttpd php5-common php5-cgi php5
+sudo apt-get install --y midori lighttpd php5-common php5-cgi php5 cec-utils
 
 #Enabling PHP handling and reloading server
 sudo lighty-enable-mod fastcgi-php
