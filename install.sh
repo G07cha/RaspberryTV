@@ -19,6 +19,3 @@ cd /var/www && sudo git clone https://github.com/G07cha/RaspberryTV.git .
 
 #Fixing permissions for files
 sudo chmod a+w /var/www/link
-sudo chmod a+x /var/www/startBrowser.sh
-sudo chmod a+x /var/www/wake.sh
-sudo chmod a+x /var/www/sleep.sh
