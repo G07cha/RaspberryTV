@@ -5,7 +5,7 @@ Easy way
 
 Download installer and execute it
 ```
-curl https://github.com/G07cha/RaspberryTV/blob/master/install.sh
+curl -O https://raw.githubusercontent.com/G07cha/RaspberryTV/master/install.sh
 chmod a+x ./install.sh
 ./install.sh
 ```
