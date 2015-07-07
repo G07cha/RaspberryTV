@@ -27,9 +27,9 @@ First of all update your Raspberry Pi after installing Raspbian:
 sudo apt-get update
 sudo apt-get upgrade
 ```
-Next install Midori, any server that you prefer and PHP module
+Install required packages
 ```
-sudo apt-get install midori lighttpd php5-common php5-cgi php5
+sudo apt-get install -y midori lighttpd php5-common php5-cgi php5 cec-utils git
 ```
 Enable handling PHP commands and reload server:
 ```
