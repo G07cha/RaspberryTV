@@ -1,4 +1,4 @@
-Simple Midori based TV for Raspberry Pi with web interface
+Simple Midori-based TV for Raspberry Pi with web interface for setting new content to display
 
 Easy way
 -------
@@ -18,6 +18,10 @@ Add next jobs on the end of the file:
 @reboot /var/www/startBrowser.sh
 0 9 * * * /var/www/wake.sh
 0 20 * * * /var/www/sleep.sh
+
+That's it! Now you can access to web interface by entering http address with yours RaspberryPi's IP
+
+If you encoured problem, try to determinate where it is by following 'Hard way' guide
 ```
 Hard way
 -------
@@ -29,7 +33,7 @@ sudo apt-get upgrade
 ```
 Install required packages
 ```
-sudo apt-get install -y midori lighttpd php5-common php5-cgi php5 cec-utils git
+sudo apt-get install midori lighttpd php5-common php5-cgi php5 cec-utils git
 ```
 Enable handling PHP commands and reload server:
 ```
@@ -48,10 +52,7 @@ cd /var/www
 sudo git clone https://github.com/G07cha/RaspberryTV.git .
 ```
 Or clone to any another place and copy files to /var/www.
-And allow write to link file
-```
-sudo chmod a+w /var/www/link
-```
+
 Finally setup cron jobs to start browser on reboot and turn off monitor at night
 ```
 crontab -e
