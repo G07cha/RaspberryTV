@@ -1,3 +1,3 @@
 #!/bin/sh
-#tvservice --off > /dev/null
+date
 echo 'standby 0' | cec-client -s

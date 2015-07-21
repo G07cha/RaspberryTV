@@ -1,5 +1,5 @@
 #/bin/sh
-
+date
 #Waiting for system boot
 sleep 5
 #Exporting env variables
