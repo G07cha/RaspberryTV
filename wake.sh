@@ -1,6 +1,6 @@
 #!/bin/sh
 date
-
+echo 'as'|cec-client -s
 echo 'on 0' | cec-client -s
 
 export DISPLAY=:0.0
