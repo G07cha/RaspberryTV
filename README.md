@@ -1,7 +1,6 @@
 Simple Midori-based TV for Raspberry Pi with web interface for setting new content to display
 
-Easy way
--------
+##Easy way
 
 Download installer and execute it
 ```
@@ -18,13 +17,12 @@ Add next jobs on the end of the file:
 @reboot /var/www/startBrowser.sh
 0 9 * * * /var/www/wake.sh
 0 20 * * * /var/www/sleep.sh
-
+```
 That's it! Now you can access to web interface by entering http address with yours RaspberryPi's IP
 
-If you encoured problem, try to determinate where it is by following 'Hard way' guide
-```
-Hard way
--------
+If you encoured problem, try to determinate where it is by following [Hard way](#hard-way) guide
+
+##Hard way
 
 First of all update your Raspberry Pi after installing Raspbian:
 ```
